@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right bottom, #04030c, #0c04e9);
+}
+
+header{
+    background-color:#EFF2D5 ;
+    border-bottom: 2px solid black;
+    padding: 30px;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+nav {
+    padding: 50px;
+    height: 55vh;
+    color: white;
+}
+
+footer{
+    background-color:#030135 ;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
