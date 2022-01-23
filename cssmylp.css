@@ -19,18 +19,39 @@ body{
 }
 
 header{
-    
+    display: flex;   
+    justify-content:space-between;
+    flex-wrap: wrap;
     border-bottom: 2px solid white;
     padding: 30px;
 }
 
 #cabecalho{
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho a{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 0px 10px;
+}
+
+#cabecalho a:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+section{
+    border-bottom: 1px solid white;
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 50px;
     height: 55vh;
     color: white;
@@ -39,37 +60,51 @@ nav {
 
 nav h1 {
     font-family: var(--font2);
-    font-size: 4em;
+    font-size: 5vw;
+    text-shadow: 2px 2px black;
 }
 
 nav h2 {
     font-family: var(--font1);
-    font-size: 2em;
+    font-size: 3.5vw;
+    text-shadow: 2px 2px black;
 }
 
 #botao{
     text-align: center;
     background-color:#030135;
-    width: 200px;
+    width: 25vw;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px  rgba(255, 255, 255, 0.596);
-    margin-left: 80px;
-    margin-top: 50px;
+    box-shadow: 1px 1px  rgba(255, 255, 255, 0.596);
+    margin-left:4vw ;
+    margin-top: 30px;
 }
 
 #botao a {
     color: white;
     text-decoration: none;
     font-family:var(--font1);
-    font-size: 1.5em;
+    font-size: 3vw;
+}
+
+#botao:hover{
+    background-color: white;
+    box-shadow:3px 3px  black;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+#botao a:hover{
+    color: black;
+    transition: 0.5s;
+    text-decoration: underline;
 }
 
 #minhafoto{
     position: absolute;
     left: 120vh;
     top: 30vh;
-    border-radius: 20px;
 }
 
 footer{
