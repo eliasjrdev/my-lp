@@ -18,6 +18,10 @@ body{
     background: linear-gradient(to right bottom, #04030c, #0c04e9);
 }
 
+.perfil{
+    margin-left: 30px;
+}
+
 header{
     display: flex;   
     justify-content:space-between;
@@ -33,10 +37,14 @@ header{
     align-items: center;
 }
 
+#cabecalho img {
+    width: 5vw;
+}
+
 #cabecalho a{
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px 0px 10px;
+    margin: 0px 90px 0px 10px;
 }
 
 #cabecalho a:hover{
@@ -75,7 +83,7 @@ nav h2 {
     background-color:#030135;
     width: 25vw;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 1px 1px  rgba(255, 255, 255, 0.596);
     margin-left:4vw ;
     margin-top: 30px;
@@ -102,11 +110,8 @@ nav h2 {
 }
 
 #minhafoto{
-    position: absolute;
-    left: 120vh;
-    top: 30vh;
+    display: flex;
 }
-
 footer{
     background-color:#030135 ;
     padding: 20px;
