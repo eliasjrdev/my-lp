@@ -63,7 +63,11 @@ nav {
     padding: 50px;
     height: 55vh;
     color: white;
-    
+}
+
+picture {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav h1 {
@@ -109,9 +113,6 @@ nav h2 {
     text-decoration: underline;
 }
 
-#minhafoto{
-    display: flex;
-}
 footer{
     background-color:#030135 ;
     padding: 20px;
