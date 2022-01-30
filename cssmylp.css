@@ -49,9 +49,6 @@ header{
 
 section{
     border-bottom: 1px solid white;
-}
-
-nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -89,35 +86,33 @@ picture {
     margin-left: 17px;
 }
 
-#botao{
-    text-align: center;
-    background-color:#030135;
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 1px 1px  rgba(255, 255, 255, 0.596);
-    padding: 10px;
-    margin-left: 140px;
-    margin-top: 30px;
-    width: 210px;
+button {
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.363);
+    background-color: #05042cd8;
+    border: 0;
+    margin-top: 20px;
+    margin-left:130px;
 }
 
-#botao a {
+button:hover {
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+button a:hover {
+    color: black;
+}
+
+button a {
+    font-family: var(--font1);
     color: white;
     text-decoration: none;
-    font-family:var(--font1);
-    font-size: 23px;
-}
-
-#botao:hover{
-    background-color: white;
-    box-shadow:3px 3px  black;
-    transform: scale(1.1);
-}
-
-#botao a:hover{
-    color: black;
-    transition: 0.5s;
-    text-decoration: underline;
+    font-size: 1.5em;
 }
 
 footer{
@@ -130,22 +125,5 @@ footer{
 
 @media (max-width:625px){
 
-    #meunome h1 {
-        font-size: 10vw;
-        margin-left: 7vw;
-        
-    }
-
-    #meunome h2 {
-        font-size: 6vw;
-    }
-
-    picture{
-        position: relative;
-        float: left;
-    }
-
-    #botao{
-        margin-left: 18vw;
-    }
+    
 }
