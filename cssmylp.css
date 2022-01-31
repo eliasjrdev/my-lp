@@ -16,6 +16,12 @@
 
 body{
     background: linear-gradient(to right bottom, #04030c, #0c04e9);
+    display: grid;
+    grid-template-areas:
+        " header  header"
+        " section aside "
+        " footer footer ";
+        grid-template-columns: min-content;
 }
 
 .perfil{
@@ -23,6 +29,7 @@ body{
 }
 
 header{
+    grid-area:header;
     display: flex;   
     justify-content:space-between;
     border-bottom: 2px solid white;
@@ -48,10 +55,8 @@ header{
 }
 
 section{
+    grid-area:section;
     border-bottom: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding: 50px;
     color: white;
     height: 380px;
@@ -60,14 +65,12 @@ section{
 #meunome {
     width: 530px;
 }
-picture {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
 
-    left: 60vw;
-
+aside{
+    grid-area: aside;
+    border-bottom: 1px solid white;
 }
+
 
 #meunome h1 {
     font-family: var(--font2);
@@ -116,14 +119,10 @@ button a {
 }
 
 footer{
+    grid-area:footer;
     background-color:#030135 ;
     padding: 10px;
     text-align: center;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-@media (max-width:625px){
-
-    
 }
