@@ -19,7 +19,7 @@ body{
     display: grid;
     grid-template-areas:
         " header  header"
-        " section aside "
+        " section   main"
         " footer footer ";
         grid-template-columns: min-content;
 }
@@ -36,13 +36,17 @@ header{
     padding: 30px;
 }
 
-#cabecalho{
+nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
-
+ 
+#cabecalho ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+}
 #cabecalho a{
     display: flex;
     justify-content: space-between;
@@ -53,8 +57,19 @@ header{
     transform: scale(1.1);
     transition: all 0.3s;
 }
+section {
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
 
-section{
+picture img{
+    margin-top: 45px;
+}
+
+
+main{
     grid-area:section;
     border-bottom: 1px solid white;
     padding: 50px;
@@ -65,12 +80,6 @@ section{
 #meunome {
     width: 530px;
 }
-
-aside{
-    grid-area: aside;
-    border-bottom: 1px solid white;
-}
-
 
 #meunome h1 {
     font-family: var(--font2);
@@ -117,15 +126,7 @@ button a {
     text-decoration: none;
     font-size: 1.5em;
 }
-aside {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-picture {
-    display: flex;
-    align-items: center;
-}
+
 footer{
     grid-area:footer;
     background-color:#030135 ;
