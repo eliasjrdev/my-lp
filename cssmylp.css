@@ -19,7 +19,7 @@ body{
     display: grid;
     grid-template-areas:
         " header  header"
-        " section   main"
+        " main   main"
         " footer footer ";
         grid-template-columns: min-content;
 }
@@ -34,6 +34,10 @@ header{
     justify-content:space-between;
     border-bottom: 2px solid white;
     padding: 30px;
+}
+
+img {
+    max-width: 100%;
 }
 
 nav {
@@ -66,11 +70,14 @@ section {
 
 picture img{
     margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 
 main{
-    grid-area:section;
+    grid-area:main;
     border-bottom: 1px solid white;
     padding: 50px;
     color: white;
@@ -134,4 +141,18 @@ footer{
     text-align: center;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media(max-width:920px) {
+    #meunome{
+        margin: auto;
+        font-size: 90%;
+    }
+
+}
+
+@media(max-width:1300px){
+    picture img {
+        display: inline-block;
+        float:inline-end;
 }
