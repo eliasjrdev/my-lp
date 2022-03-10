@@ -20,6 +20,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     overflow-x: hidden;
+    
 }
 
 /* CABEÇALHO */
@@ -156,6 +157,8 @@ footer{
     background-color: #06044bc4;
     padding: 10px;
     border-top: 2px solid white;
+    
+    
 }
 
 /*Responsivo*/
